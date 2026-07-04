@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neto do Ventilador | Conserto & Venda de Eletrodomésticos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>MANUTENÇÃO • CONSERTO • VENDA • ORÇAMENTO GRÁTIS • ATENDIMENTO RÁPIDO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span>MANUTENÇÃO • CONSERTO • VENDA • ORÇAMENTO GRÁTIS • ATENDIMENTO RÁPIDO&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<header class="topbar">
+  <nav class="nav container">
+    <div class="brand">
+      <img src="logo.png" alt="Neto do Ventilador" class="brand-logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#horarios">Horários</a></li>
+      <li><a href="#local">Localização</a></li>
+      <li><a href="#agendar" class="nav-cta">Agendar</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <p class="eyebrow">— desde sempre cuidando da sua casa —</p>
+      <h1>Seu eletrodoméstico <span class="highlight">parou?</span><br>A gente resolve.</h1>
+      <p class="hero-sub">Conserto e venda de máquinas de lavar, micro-ondas, liquidificadores e muito mais. Diagnóstico honesto, serviço de confiança.</p>
+      <div class="hero-actions">
+        <a href="#agendar" class="btn btn-primary">Agendar visita</a>
+        <a href="https://wa.me/5519997310253" target="_blank" rel="noopener" class="btn btn-ghost">Chamar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-dial" aria-hidden="true">
+      <svg viewBox="0 0 220 220" class="dial-svg">
+        <circle cx="110" cy="110" r="100" class="dial-ring-bg"/>
+        <circle cx="110" cy="110" r="100" class="dial-ring-red" pathLength="100" stroke-dasharray="62 100"/>
+        <circle cx="110" cy="110" r="100" class="dial-ring-gray" pathLength="100" stroke-dasharray="38 100" stroke-dashoffset="-62"/>
+        <g class="fan-group">
+          <path d="M110 110 C110 80, 130 70, 140 90 C130 95, 115 100, 110 110 Z" class="fan-blade"/>
+          <path d="M110 110 C140 110, 150 130, 130 140 C125 130, 120 115, 110 110 Z" class="fan-blade"/>
+          <path d="M110 110 C110 140, 90 150, 80 130 C90 125, 105 120, 110 110 Z" class="fan-blade"/>
+          <path d="M110 110 C80 110, 70 90, 90 80 C95 90, 100 105, 110 110 Z" class="fan-blade"/>
+          <circle cx="110" cy="110" r="10" class="fan-hub"/>
+        </g>
+      </svg>
+      <p class="dial-caption">EM ATENDIMENTO</p>
+    </div>
+  </section>
+
+  <section class="services container" id="servicos">
+    <h2 class="section-title">O que a gente conserta</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <span class="service-tag">01</span>
+        <h3>Máquinas de lavar</h3>
+        <p>Vazamentos, não centrifuga, não liga, ruídos estranhos.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">02</span>
+        <h3>Micro-ondas</h3>
+        <p>Não esquenta, prato não gira, painel travado.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">03</span>
+        <h3>Liquidificadores</h3>
+        <p>Motor fraco, lâmina travada, não liga.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">04</span>
+        <h3>Ventiladores</h3>
+        <p>Não gira, hélice solta, motor superaquecendo.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">05</span>
+        <h3>Outros eletrodomésticos</h3>
+        <p>Não achou o seu na lista? Manda mensagem que a gente avalia.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-tag">06</span>
+        <h3>Venda de aparelhos</h3>
+        <p>Também vendemos eletrodomésticos revisados e com garantia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-band" id="horarios">
+    <div class="container info-grid">
+      <div class="info-block">
+        <h2 class="section-title light">Horário de atendimento</h2>
+        <table class="hours-table">
+          <tr><td>Segunda a sexta</td><td>08:00 — 18:00</td></tr>
+          <tr><td>Sábado</td><td>08:00 — 13:00</td></tr>
+          <tr><td>Domingo</td><td class="closed">Fechado</td></tr>
+        </table>
+        <p class="hours-note">* Atendimentos de urgência via WhatsApp fora do horário comercial, sujeitos a taxa adicional.</p>
+      </div>
+      <div class="info-block" id="local">
+        <h2 class="section-title light">Onde estamos</h2>
+        <p class="address">Rua Exemplo, 123 — Bairro Centro<br>Sua Cidade — UF, CEP 00000-000</p>
+        <div class="map-wrap">
+          <iframe
+            title="Localização Neto do Ventilador"
+            src="https://www.google.com/maps?q=Rua%20Exemplo%2C%20123&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="hours-note">* Atualize o endereço acima e o link do mapa com a localização real da loja.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule container" id="agendar">
+    <div class="schedule-head">
+      <h2 class="section-title">Agendar atendimento</h2>
+      <p>Preencha os dados abaixo. Retornamos por telefone ou WhatsApp para confirmar o horário.</p>
+    </div>
+
+    <form id="scheduleForm" class="ticket-form" novalidate>
+      <div class="ticket-header">
+        <span>ORDEM DE SERVIÇO</span>
+        <span id="ticketNumber">Nº ---</span>
+      </div>
+
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+      </div>
+
+      <div class="field">
+        <label for="telefone">Telefone / WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(19) 90000-0000" required>
+      </div>
+
+      <div class="field">
+        <label for="eletrodomestico">Eletrodoméstico</label>
+        <select id="eletrodomestico" name="eletrodomestico" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="Máquina de lavar">Máquina de lavar</option>
+          <option value="Micro-ondas">Micro-ondas</option>
+          <option value="Liquidificador">Liquidificador</option>
+          <option value="Ventilador">Ventilador</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="descricao">Descrição do problema</label>
+        <textarea id="descricao" name="descricao" rows="4" placeholder="Conte o que está acontecendo com o aparelho" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Enviar agendamento</button>
+
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="logo.png" alt="Neto do Ventilador" class="footer-logo">
+      <p>Conserto & vendas de eletrodomésticos.</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p><a href="https://wa.me/5519997310253" target="_blank" rel="noopener">(19) 99731-0253</a></p>
+      <p><a href="https://wa.me/5519982430598" target="_blank" rel="noopener">(19) 98243-0598</a></p>
+      <p><a href="https://instagram.com/neto00ventilador" target="_blank" rel="noopener">@neto00ventilador</a></p>
+    </div>
+    <div>
+      <h4>Horário</h4>
+      <p>Seg a sex: 08h—18h</p>
+      <p>Sáb: 08h—13h</p>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> Neto do Ventilador. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
